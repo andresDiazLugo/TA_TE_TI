@@ -1,0 +1,95 @@
+.containerPrincipal{
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container{
+  width: 21rem;
+  height: 23rem;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  
+  align-items: center;
+  justify-items: center;
+}
+.container p {
+  font-size: 5rem;
+  font-weight: 900;
+  cursor: default;
+}
+
+.contador{
+  width: 90%;
+  height: 4rem;
+  border: solid 2px black;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: space-around;
+  background-color: #2b2d42;
+ 
+}
+.contador h2{
+  background-color: red;
+  width: 30%;
+  text-align: center;
+}
+.pX{
+ color: red;
+}
+.pO{
+color: blue;
+}
+
+.block{
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b2d42;
+}
+.blockActive{
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b2d42;
+  animation: block 1s infinite;
+}
+.cartel{
+  position:fixed;
+  margin-bottom: 32rem;
+}
+.cartel h1{
+  color: black;
+  font-weight: 900;
+  font-size: 4rem;
+}
+@keyframes block{
+from{
+  transform: rotate(360deg);
+  background-color: gold;
+ 
+}
+to{
+  border-radius: 50%;
+  background-color: gold;
+}
+
+}
